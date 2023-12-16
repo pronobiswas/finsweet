@@ -294,16 +294,13 @@ ol, ul {
   padding: 128px 0;
   background-color: #F4F6FC;
 }
+#fearue .feature_warpper {
+  width: 100%;
+}
 #fearue .feature_warpper .feature_header {
   width: 100%;
 }
-#fearue .feature_warpper .feature_header .sub_heading {
-  text-align: center;
-  color: red;
-}
-#fearue .feature_warpper .feature_header .h2 {
-  width: 630px;
-  margin: auto;
+#fearue .feature_warpper .feature_header p {
   text-align: center;
   color: red;
 }/*# sourceMappingURL=style.css.map */

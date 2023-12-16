@@ -311,21 +311,17 @@ ol,ul{
     padding: 128px 0;
     background-color: #F4F6FC;
     .feature_warpper{
+        width: 100%;
         .feature_header{
             width: 100%;
-            .sub_heading{
+            p{
                 text-align: center;
                 color: red;
             }
-            .h2{
-                width: 630px;
-                margin: auto;
-                text-align: center;
-                color: red;
-            }
+            
         }
 
-        .feature_card_warpper{
-        }
+        // .feature_card_warpper{
+        // }
     }
 }
