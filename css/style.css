@@ -129,17 +129,15 @@ ol, ul {
   color: #FCD980;
 }
 #banner .banner_warpper .banner_content .banner_btn_warpper a {
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 175% */
   padding: 16px 56px;
   background: #FCD980;
   color: #fff;
   border-radius: 41px;
   display: inline-block;
   transition: 0.3s all linear;
+}
+#banner .banner_warpper .banner_content .banner_btn_warpper a :hover {
+  color: #FCD980;
 }
 #banner .banner_warpper .banner_content .banner_btn_warpper a i {
   padding-left: 16px;
@@ -337,4 +335,155 @@ ol, ul {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+#clint {
+  width: 100%;
+  padding: 130px 0;
+}
+#clint .clint_content_warpper {
+  display: flex;
+  justify-content: center;
+  column-gap: 110px;
+}
+#clint .clint_content_warpper .clint_content {
+  width: 327px;
+}
+#clint .clint_content_warpper .clint_content h3 {
+  width: 327px;
+  color: #282938;
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+#clint .clint_content_warpper .clint_content p {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+#clint .clint_content_warpper .clint_txt {
+  width: 843px;
+}
+#clint .clint_content_warpper .clint_txt h3 {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 42px;
+}
+#clint .clint_content_warpper .clint_txt .clint_profile {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+#clint .clint_content_warpper .clint_txt .clint_profile .clint_profile_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+#clint .clint_content_warpper .clint_txt .clint_profile .clint_profile_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#clint .clint_content_warpper .clint_txt .clint_profile .clint_profile_txt p {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+#clint .clint_content_warpper .clint_txt .clint_profile .clint_profile_txt :last-child {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#faq {
+  width: 100%;
+  padding: 128px 0;
+}
+#faq .faq_warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#faq .faq_warpper .faq_headding_txt {
+  width: 328px;
+}
+#faq .faq_warpper .faq_headding_txt h3 {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+#faq .faq_warpper .faq_headding_txt a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+#faq .faq_warpper .faq_content {
+  width: 846px;
+}
+#faq .faq_warpper .faq_content .faq_content_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 2px solid #ECECF1;
+}
+#faq .faq_warpper .faq_content .faq_content_item .faq_info {
+  display: flex;
+  column-gap: 56px;
+}
+#faq .faq_warpper .faq_content .faq_content_item .faq_info span {
+  color: #2405F2;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+#faq .faq_warpper .faq_content .faq_content_item .faq_info h4 {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+#faq .faq_warpper .faq_content .faq_content_item .faq_info p {
+  width: 624px;
+  color: #282938;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+#faq .faq_warpper .faq_content .faq_content_item .faq_icon i {
+  font-size: 24px;
+  line-height: 30px;
+}
+#faq .faq_warpper .faq_content .faq_content_item:first-child {
+  padding-top: 0px;
+}
+#faq .faq_warpper .faq_content .faq_content_item:last-child {
+  border: none;
 }/*# sourceMappingURL=style.css.map */
