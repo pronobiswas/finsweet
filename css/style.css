@@ -75,13 +75,27 @@ ol, ul {
   justify-content: center;
   column-gap: 32px;
 }
-#navbar .nav_warpper .nav_menu .menu_list .menu_list_item :hover {
-  color: #fff;
-}
 #navbar .nav_warpper .nav_menu .menu_list .menu_list_item a {
   color: #BBBBCB;
   display: inline-block;
   transition: 0.2s all linear;
+  position: relative;
+}
+#navbar .nav_warpper .nav_menu .menu_list .menu_list_item a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: 0.2s all linear;
+}
+#navbar .nav_warpper .nav_menu .menu_list .menu_list_item a:hover {
+  color: #fff;
+}
+#navbar .nav_warpper .nav_menu .menu_list .menu_list_item a:hover::after {
+  width: 100%;
 }
 #navbar .nav_warpper .nav_menu .nav_btn a {
   display: inline-block;
@@ -124,20 +138,18 @@ ol, ul {
   width: 562px;
   margin: 24px 0 48px 0;
 }
-#banner .banner_warpper .banner_content .banner_btn_warpper :hover {
-  background-color: transparent;
-  color: #FCD980;
-}
 #banner .banner_warpper .banner_content .banner_btn_warpper a {
   padding: 16px 56px;
   background: #FCD980;
   color: #fff;
   border-radius: 41px;
   display: inline-block;
-  transition: 0.3s all linear;
+  transition: 0.2s all linear;
 }
-#banner .banner_warpper .banner_content .banner_btn_warpper a :hover {
+#banner .banner_warpper .banner_content .banner_btn_warpper a:hover {
   color: #FCD980;
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #FCD980;
 }
 #banner .banner_warpper .banner_content .banner_btn_warpper a i {
   padding-left: 16px;
@@ -175,10 +187,23 @@ ol, ul {
 #work .work_warpper .work_card .work_card_warpper {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
+  gap: 28px;
 }
 #work .work_warpper .work_card .work_card_warpper .card {
-  width: 328px;
+  width: 310px;
+}
+#work .work_warpper .work_card .work_card_warpper .card .card_image {
+  width: 50px;
+  height: 50px;
+}
+#work .work_warpper .work_card .work_card_warpper .card .card_content h4 {
+  margin: 16px 0 8px 0;
+  color: #282938;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
 }
 
 #project {
@@ -544,6 +569,7 @@ ol, ul {
   border: 1.5px solid rgba(255, 255, 255, 0.05);
   background-color: transparent;
   margin-bottom: 16px;
+  color: #fff;
 }
 #contact .contact_content_warpper .contact_main form button {
   width: 100%;
@@ -619,6 +645,18 @@ ol, ul {
 #blog .blog_content_warpper .blog_card_warpper a {
   color: #1B1C2B;
   font-weight: 600;
+  transition: 0.2s all linear;
+}
+#blog .blog_content_warpper .blog_card_warpper a i {
+  margin-left: 2px;
+  transition: 0.2s all linear;
+}
+#blog .blog_content_warpper .blog_card_warpper a:hover {
+  color: #2405F2;
+}
+#blog .blog_content_warpper .blog_card_warpper a:hover i {
+  margin-left: 10px;
+  color: #2405F2;
 }
 
 #footer {
@@ -631,6 +669,7 @@ ol, ul {
 }
 #footer .footer_warpper .footer_left {
   width: 50%;
+  position: relative;
 }
 #footer .footer_warpper .footer_left .footer_logo {
   margin-bottom: 22px;
@@ -649,6 +688,15 @@ ol, ul {
   background-color: #FCD980;
   display: flex;
   column-gap: 40px;
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+}
+#footer .footer_warpper .footer_left .footer_contact_card .footer_contact h4 {
+  margin-bottom: 8px;
+}
+#footer .footer_warpper .footer_left .footer_contact_card .footer_contact a {
+  color: #1C1E53;
 }
 #footer .footer_warpper .footer_right {
   width: 50%;
@@ -656,4 +704,68 @@ ol, ul {
 }
 #footer .footer_warpper .footer_right h2 {
   color: #fff;
+}
+#footer .footer_warpper .footer_right p {
+  width: 399px;
+  margin: 14px 0 28px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+#footer .footer_warpper .footer_right .footer_icon_warpper {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer_warpper .footer_right .footer_icon_warpper i {
+  color: #fff;
+  transition: 0.2s all linear;
+}
+#footer .footer_warpper .footer_right .footer_icon_warpper i:hover {
+  color: #FCD980;
+}
+
+#footer_menu {
+  width: 100%;
+  padding: 32px 0;
+}
+#footer_menu .footer_menu_warpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer_menu .footer_menu_warpper .foot_menu .foot_menu_list {
+  display: flex;
+  column-gap: 32px;
+}
+#footer_menu .footer_menu_warpper .foot_menu .foot_menu_list .foot_menu_list_item a {
+  color: #282938;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  position: relative;
+  display: block;
+  transition: 0.2s all linear;
+}
+#footer_menu .footer_menu_warpper .foot_menu .foot_menu_list .foot_menu_list_item a::after {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #2405F2;
+  transition: 0.2s all linear;
+}
+#footer_menu .footer_menu_warpper .foot_menu .foot_menu_list .foot_menu_list_item a:hover {
+  color: #2405F2;
+}
+#footer_menu .footer_menu_warpper .foot_menu .foot_menu_list .foot_menu_list_item a:hover::after {
+  width: 65px;
 }/*# sourceMappingURL=style.css.map */
